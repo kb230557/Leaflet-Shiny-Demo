@@ -6,7 +6,10 @@ The data sets used in this script are included in the respository. The script ca
 
 Shiny applications can be published online for free by creating an account with [shinyapps.io](http://www.shinyapps.io/), RStudio’s hosting service for Shiny apps.
 
+
 For those interested in learning more, check out:
 - https://github.com/Robinlovelace/Creating-maps-in-R
 - https://rstudio.github.io/leaflet/
 - https://shiny.rstudio.com/tutorial/
+
+Questions on this respository can be sent to kbemis@cookcountyhhs.org.
