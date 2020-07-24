@@ -24,12 +24,8 @@ library(shiny)   #To place that map in an interactive application, responsive to
 #       In the code below, we are going to use read_excel() (a function from the readxl package) to import a 
 #       spreadsheet and save it as an object called "ILI".
 
-#       A special note to Github users: If you'd like to run this code on your own computer, the data files
-#       are available in the respository - just remember to change the file paths in this code (there are
-#       three of them) to wherever you store the data.
 
-
-ILI <- read_excel(path = "H:/Special Projects/UIC Demo/ILI_By_Zip_Code_Demo.xlsx")    
+ILI <- read_excel("ILI_By_Zip_Code_Demo.xlsx")    
 
 
 #       The ILI data set contains the percent of emergency room visits for influenza like illness(ILI) by zip 
@@ -44,7 +40,7 @@ glimpse(ILI)
 #       readOGR() (a function from the rgdal package).
 
 
-Zips <- readOGR(dsn = "H:/Special Projects/UIC Demo", layer = "Zip_Code_Demo")
+Zips <- readOGR(dsn = getwd(), layer = "Zip_Code_Demo")
 
 
 #       Let's see what spatial objects look like in R with glimpse()
@@ -163,7 +159,7 @@ leaflet() %>%
 #     zip code shapefile so we know we're starting fresh
 
 
-Zips <- readOGR(dsn = "H:/Special Projects", layer = "Zip_Code_Demo")
+Zips <- readOGR(getwd(), layer = "Zip_Code_Demo")
 
 
 #     You can use Shiny to build an application that lets users select what data they want to see, then recreates 
