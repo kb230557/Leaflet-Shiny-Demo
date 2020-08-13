@@ -10,6 +10,7 @@ library(rgdal)   #To import our shapefiles
 library(dplyr)   #A handy package with lots of useful data manipulation functions
 library(leaflet) #To build our interactive map
 library(shiny)   #To place that map in an interactive application, responsive to user inputs
+library(tidyverse)
 
 
 
